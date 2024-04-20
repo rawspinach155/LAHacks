@@ -106,15 +106,3 @@ sr.reveal(`.home__data, .home__img,
     interval: 200
 })
 
-document.addEventListener('DOMContentLoaded', function() {
-    const signinButton = document.getElementById('signin-button');
-    const signupButton = document.getElementById('signup-button');
-    const signinSection = document.getElementById('signin');
-    const signupSection = document.getElementById('signup');
-
-
-    signupButton.addEventListener('click', function() {
-        signinSection.style.display = 'none';
-        signupSection.style.display = 'block';
-    });
-});
