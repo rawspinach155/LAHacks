@@ -113,12 +113,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const signupSection = document.getElementById('signup');
 
 
-    signinButton.addEventListener('click', function() {
-        signinSection.style.display = 'block';
-        signupSection.style.display = 'none';
-    });
-
-
     signupButton.addEventListener('click', function() {
         signinSection.style.display = 'none';
         signupSection.style.display = 'block';
