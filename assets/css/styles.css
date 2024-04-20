@@ -122,6 +122,12 @@ img{
   margin-bottom: var(--mb-3);
 }
 
+.login-section-title{
+  font-size: var(--h1-font-size);
+  color: #000;
+  margin-bottom: var(--mb-3);
+}
+
 .section-subtitle{
   display: block;
   color: var(--first-color);
