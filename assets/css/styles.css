@@ -566,7 +566,7 @@ img{
     }
 }
 
-/* Form Styles */
+Form Styles
 .form__container {
   display: flex;
   justify-content: center;
@@ -581,13 +581,6 @@ img{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 40px;
   text-align: center;
-}
-
-
-.section-title {
-  font-size: 24px;
-  margin-bottom: 30px;
-  color: var(--title-color);
 }
 
 .login-section-title {
