@@ -5,27 +5,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+
+
         <!--========== BOX ICONS ==========-->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+
 
 
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
 
+
+
         <title>Welcome to MeddiBuddy</title>
     </head>
     <body>
-
-
         <a href="#" class="scrolltop" id="scroll-top">
             <i class='bx bx-chevron-up scrolltop__icon'></i>
         </a>
 
 
+
+
         <header class="l-header" id="header">
             <nav class="nav bd-container">
                 <a href="#" class="nav__logo">MediBuddy</a>
+
+
 
 
                 <div class="nav__menu" id="nav-menu">
@@ -37,9 +45,13 @@
                         <li class="nav__item"><a href="sign.html" class="nav__link">Login</a></li>
 
 
+
+
                         <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
                     </ul>
                 </div>
+
+
 
 
                 <div class="nav__toggle" id="nav-toggle">
@@ -47,6 +59,8 @@
                 </div>
             </nav>
         </header>
+
+
 
 
         <main class="l-main">
@@ -63,9 +77,9 @@
                     </div>
                 </div>
             </section>
-        
+       
             <!-- Sign-up form -->
-            <section class="form section bd-container" id="signup">
+            <section class="form section bd-container" id="signup" style="display: none;">
                 <div class="form__container bd-grid">
                     <div class="form__data">
                         <h2 class="section-title">Sign Up</h2>
@@ -78,21 +92,50 @@
                     </div>
                 </div>
             </section>
-        
+       
             <div style="text-align: center; margin-top: 20px;">
-                <button id="signin-button" class="button">Sign In</button>
-                <button id="signup-button" class="button">Sign Up</button>
+                <button id="signin-button" class="button" style="display: none;">Sign In</button>
+                <button id="signup-button" class="button" style="display: inline-block;">Sign Up</button>
             </div>
         </main>
-        
-        
+       
+       
+
+
 
 
         <!--========== SCROLL REVEAL ==========-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
 
+        <script>
+            const signinButton = document.getElementById('signin-button');
+            const signupButton = document.getElementById('signup-button');
+            const signinSection = document.getElementById('signin');
+            const signupSection = document.getElementById('signup');
+   
+            signinButton.addEventListener('click', () => {
+                signinButton.style.display = 'none'; // Hide the Sign In button
+                signupButton.style.display = 'inline-block'; // Show the Sign Up button
+                signinSection.style.display = 'block'; // Show the Sign In section
+                signupSection.style.display = 'none'; // Hide the Sign Up section
+            });
+   
+            signupButton.addEventListener('click', () => {
+                signinButton.style.display = 'inline-block'; // Show the Sign In button
+                signupButton.style.display = 'none'; // Hide the Sign Up button
+                signinSection.style.display = 'none'; // Hide the Sign In section
+                signupSection.style.display = 'block'; // Show the Sign Up section
+            });
+   
+            // By default, show the sign-in section and hide the sign-up section
+            signinSection.style.display = 'block';
+            signupSection.style.display = 'none';
+        </script>
+
+
         <!--========== MAIN JS ==========-->
         <script src="assets/js/main.js"></script>
     </body>
 </html>
+
